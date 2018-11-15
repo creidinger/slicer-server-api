@@ -19,6 +19,10 @@ def index(name=None):
 def slicer():
     return redirect(url_for('index'))
 
+@app.route('/about')
+def about():
+    return 'About Page'
+
 @app.route('/s3')
 def s3_transport():
     return 'Send/Receive data from the s3'
